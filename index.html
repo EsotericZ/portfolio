@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico?">
@@ -21,13 +22,16 @@
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" id="home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" id="about">About Me</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" id="skills" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="projects">Projects</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
@@ -41,8 +45,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fas fa-phone-square"></i></a>
             </li>
-
-            
+            <!-- CODE WARS? -->
         </ul>
     </div>
 </nav>
@@ -50,19 +53,38 @@
 
 
 <body>
+    <div class="container-fluid" id="test">
+        <div class="row" id="homeRow">
+            <img src="./assets/images/profile.jfif" alt="CJ">
+        </div> 
+        <div class="row" id="abtRow">
+            <div class="col-4 justify-content-center" id="abtLeft"></div>
+            <div class="col-4 justify-content-center" id="abtMid"></div>
+            <div class="col-4 justify-content-center" id="abtRight"></div>
+        </div>
+        <div class="row hidden" id="sklRow">
+            <div class="col-4 justify-content-center" id="sklLeft">SKILLZ 1</div>
+            <div class="col-4 justify-content-center" id="sklMid">SKILLZ 2</div>
+            <div class="col-4 justify-content-center" id="sklRight">SKILLZ 3</div>
+        </div>
+        <div class="row" id="prjRow1">
+            <div class="col-4 justify-content-center" id="prjTop"></div>
+        </div> 
+        <div class="row" id="prjRow2">
+            <div class="col-4 justify-content-center" id="prjBLeft"></div>
+            <div class="col-4 justify-content-center" id="prjBMid"></div>
+            <div class="col-4 justify-content-center" id="prjBRight"></div>
+        </div>
+        <div class="row" id="btmRow">
+            <div class="col-4 justify-content-center" id="btmLeft"></div>
+            <div class="col-4 justify-content-center" id="btmMid"></div>
+            <div class="col-4 justify-content-center" id="btmRight"></div>
+        </div>
+    </div>
 
-    <section id="home">
-        <img src="./assets/images/profile.jfif" alt="CJ">
-    </section> 
-
-    <!-- <div class="blurred-box"> -->
-  
-    <!-- </div> -->
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.js"></script>
 <script type="text/javascript" src="./assets/js/script.js"></script>
 
 </body>
