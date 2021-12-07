@@ -6,6 +6,23 @@
 let current = 1;
 const fadeTime = 1000;
 
+// NAVBAR BUTTONS
+$("#home").on('click', function() {
+  fadeOut()
+  current = 1;
+  setTimeout(function() {
+    fadeIn()
+  }, fadeTime);
+});
+
+$("#about").on('click', function() {
+  fadeOut()
+  current = 2;
+  setTimeout(function() {
+    fadeIn()
+  }, fadeTime);
+});
+
 $("#skills").on('click', function() {
   fadeOut()
   current = 3;
@@ -14,20 +31,64 @@ $("#skills").on('click', function() {
   }, fadeTime);
 });
 
+$("#projects").on('click', function() {
+  fadeOut()
+  current = 4;
+  setTimeout(function() {
+    fadeIn()
+  }, fadeTime);
+});
+
+
+
+
 // MAKE CURRENT SELECTION FADE OUT
 function fadeOut() {
   if (current === 1) {
     $("#homeRow").fadeOut(fadeTime, function() {
       $(this).toggleClass("hidden");
+      $("#home").toggleClass("glow");
+    })
+  } else if (current === 2) {
+    $("#abtRow").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
+      $("#about").toggleClass("glow");
+    })
+  } else if (current === 3) {
+    $("#sklRow").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
+      $("#skills").toggleClass("glow");
+    })
+  }  else {
+    $("#prjRow1").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
+      $("#projects").toggleClass("glow");
     })
   }
 }
 
+
+
+
+
 // MAKE NEW SELECTION FADE IN
 function fadeIn() {
-  if (current === 3) {
+  if (current === 1) {
+    $("#homeRow").toggleClass("hidden");
+    $("#homeRow").hide().fadeIn(fadeTime);
+    $("#home").toggleClass("glow");
+  } else if (current === 2) {
+    $("#abtRow").toggleClass("hidden");
+    $("#abtRow").hide().fadeIn(fadeTime);
+    $("#about").toggleClass("glow");
+  } else if (current === 3) {
     $("#sklRow").toggleClass("hidden");
     $("#sklRow").hide().fadeIn(fadeTime);
+    $("#skills").toggleClass("glow");
+  } else {
+    $("#prjRow1").toggleClass("hidden");
+    $("#prjRow1").hide().fadeIn(fadeTime);
+    $("#projects").toggleClass("glow");
   }
 }
 
