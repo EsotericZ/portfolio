@@ -8,35 +8,43 @@ const fadeTime = 1000;
 
 // NAVBAR BUTTONS
 $("#home").on('click', function() {
-  fadeOut()
-  current = 1;
-  setTimeout(function() {
-    fadeIn()
-  }, fadeTime);
+  if (current !== 1) {
+    fadeOut()
+    current = 1;
+    setTimeout(function() {
+      fadeIn()
+    }, fadeTime);
+  }
 });
 
 $("#about").on('click', function() {
-  fadeOut()
-  current = 2;
-  setTimeout(function() {
-    fadeIn()
-  }, fadeTime);
+  if (current !== 2) {
+    fadeOut()
+    current = 2;
+    setTimeout(function() {
+      fadeIn()
+    }, fadeTime);
+  }
 });
 
 $("#skills").on('click', function() {
-  fadeOut()
-  current = 3;
-  setTimeout(function() {
-    fadeIn()
-  }, fadeTime);
+  if (current !== 3) {
+    fadeOut()
+    current = 3;
+    setTimeout(function() {
+      fadeIn()
+    }, fadeTime);
+  }
 });
 
 $("#projects").on('click', function() {
-  fadeOut()
-  current = 4;
-  setTimeout(function() {
-    fadeIn()
-  }, fadeTime);
+  if (current !== 4) {
+    fadeOut()
+    current = 4;
+    setTimeout(function() {
+      fadeIn()
+    }, fadeTime);
+  }
 });
 
 
@@ -64,6 +72,9 @@ function fadeOut() {
       $(this).toggleClass("hidden");
       $("#projects").toggleClass("glow");
     })
+    $("#prjRow2").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
+    })
   }
 }
 
@@ -88,6 +99,8 @@ function fadeIn() {
   } else {
     $("#prjRow1").toggleClass("hidden");
     $("#prjRow1").hide().fadeIn(fadeTime);
+    $("#prjRow2").toggleClass("hidden");
+    $("#prjRow2").hide().fadeIn(fadeTime);
     $("#projects").toggleClass("glow");
   }
 }
