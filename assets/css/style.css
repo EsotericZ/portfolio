@@ -16,11 +16,15 @@ a {
     margin-right: 7px;
 }
 
+/* div {
+    border: 1px solid white;
+} */
+
 /* HOME */
 #homeRow {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 98vh;
     margin: 0;
     top: 50%;
     align-items: center;
@@ -62,19 +66,27 @@ a {
 
 /* PROJECTS */
 #prjRow1 {
-    justify-content: center;
-}
-
-#prjTop {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     margin-top: 60px;
-    height: 60vh;
+    justify-content: center;
+    height: 7vh;
     color: yellow;
 }
 
-#prjBLeft, #prjBMid, #prjBRight {
+#prjTop, #prjTop2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 53vh;
+    color: yellow;
+}
+
+#pTopImg {
+    max-height: 25%;
+}
+
+#prj1Pic, #prj1Det, #prj2Pic, #prj2Det {
     display: flex;
     align-items: center;
     justify-content: space-around;

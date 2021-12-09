@@ -75,6 +75,9 @@ function fadeOut() {
     $("#prjRow2").fadeOut(fadeTime, function() {
       $(this).toggleClass("hidden");
     })
+    $("#prjRow3").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
+    })
   }
 }
 
@@ -101,6 +104,8 @@ function fadeIn() {
     $("#prjRow1").hide().fadeIn(fadeTime);
     $("#prjRow2").toggleClass("hidden");
     $("#prjRow2").hide().fadeIn(fadeTime);
+    $("#prjRow3").toggleClass("hidden");
+    $("#prjRow3").hide().fadeIn(fadeTime);
     $("#projects").toggleClass("glow");
   }
 }
