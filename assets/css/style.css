@@ -11,14 +11,18 @@ body {
     background-size: cover;
 }
 
+/* #page {
+    height: 100vh;
+} */
+
 a {
     margin-left: 7px;
     margin-right: 7px;
 }
 
-/* div {
+div {
     border: 1px solid white;
-} */
+}
 
 /* HOME */
 #homeRow {
@@ -65,7 +69,7 @@ a {
 }
 
 /* PROJECTS */
-#prjRow1 {
+#prjTop {
     display: flex;
     align-items: center;
     margin-top: 60px;
@@ -74,7 +78,7 @@ a {
     color: yellow;
 }
 
-#prjTop, #prjTop2 {
+#prjTop1, #prjTop2 {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -83,7 +87,15 @@ a {
 }
 
 #pTopImg {
-    max-height: 25%;
+    max-height: 100%;
+}
+
+#pHW1Img {
+    max-width: 100%;
+}
+
+#pHW2Img {
+    max-width: 100%;
 }
 
 #prj1Pic, #prj1Det, #prj2Pic, #prj2Det {
@@ -93,6 +105,13 @@ a {
     margin-top: 15px;
     height: 30vh;
     color: yellow;
+}
+
+#prj1Det {
+    display: block;
+    /* align-content: column; */
+    /* justify-content: column; */
+    /* justify-items: column; */
 }
 
 /* TOGGLE CLASSES */
