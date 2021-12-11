@@ -20,9 +20,9 @@ a {
     margin-right: 7px;
 }
 
-div {
+/* div {
     border: 1px solid white;
-}
+} */
 
 /* HOME */
 #homeRow {
@@ -107,11 +107,8 @@ div {
     color: yellow;
 }
 
-#prj1Det {
+#prj1Det, #prj2Det {
     display: block;
-    /* align-content: column; */
-    /* justify-content: column; */
-    /* justify-items: column; */
 }
 
 /* TOGGLE CLASSES */
