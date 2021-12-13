@@ -20,9 +20,9 @@ a {
     margin-right: 7px;
 }
 
-/* div {
+div {
     border: 1px solid white;
-} */
+}
 
 /* HOME */
 #homeRow {
@@ -74,42 +74,73 @@ a {
     align-items: center;
     margin-top: 60px;
     justify-content: center;
-    height: 7vh;
+    height: 15vh;
     color: yellow;
 }
 
-#prjTop1, #prjTop2 {
+#prjRow2, #prjRow3 {
+    justify-content: center;
+}
+
+#prjTopL, #prjTopM, #prjTopR {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 37vh;
+    color: yellow;
+    margin: 5px;
+}
+
+#prjBtmL, #prjBtmM, #prjBtmR {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    /* margin-top: 15px; */
+    height: 37vh;
+    color: yellow;
+    margin: 5px;
+}
+
+/* #prjTop1, #prjTop2 {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 53vh;
     color: yellow;
-}
+} */
 
 #pTopImg {
     max-height: 100%;
 }
 
-#pHW1Img {
-    max-width: 100%;
+#pTopImg:hover
+{
+  opacity: 0.3;
+  filter: alpha(opacity=30);
 }
 
-#pHW2Img {
+/* #pHW1Img {
     max-width: 100%;
-}
+} */
 
-#prj1Pic, #prj1Det, #prj2Pic, #prj2Det {
+/* #pHW2Img {
+    max-width: 100%;
+} */
+
+/* #prj1Pic, #prj1Det, #prj2Pic, #prj2Det {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-top: 15px;
     height: 30vh;
     color: yellow;
-}
+} */
 
-#prj1Det, #prj2Det {
+/* #prj1Det, #prj2Det {
     display: block;
-}
+} */
 
 /* TOGGLE CLASSES */
 .hidden {
