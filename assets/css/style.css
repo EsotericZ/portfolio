@@ -115,10 +115,45 @@ div {
     max-height: 100%;
 }
 
-#pTopImg:hover
+.pt:hover
 {
   opacity: 0.3;
   filter: alpha(opacity=30);
+}
+
+.text {
+    opacity: 0;
+}
+
+.pt:hover .text {
+    opacity: 1;
+}
+
+.ptlb {
+    position: absolute;
+    width: 500px;
+    /* left:0; */
+    top: 180px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+.ptlb a {
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    z-index: 1;
+}
+
+.pt:hover .ptlb {
+    opacity: 1;
+}
+
+#pTopImg:hover #ptlBtn a {
+    opacity: 1;
 }
 
 /* #pHW1Img {
