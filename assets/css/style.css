@@ -111,15 +111,15 @@ a {
     color: yellow;
 } */
 
-#p1Img, #p4Img {
+#p1Img, #p2Img, #p3Img, #p4Img {
     max-height: 100%;
 }
 
-.ptl .pbl {
+.p1, .p2, .p3, .p4, .p5, .p6 {
     position: relative;
 }
 
-.bgtl .bgbl {
+.bgl, .bg2, .bg3, .bg4 {
     opacity: 1;
     display: block;
     height: auto;
@@ -131,13 +131,13 @@ a {
     text-align: center;
 }
 
-.ptlb .pblb {
+.p1b, .p2b, .p3b, .p4b {
     position: relative;
     text-align: center;
     opacity: 0;
 }
 
-.ptlb a {
+.p1b a, .p2b a, .p3b a, .p4b a {
     padding: 12px 48px;
     text-align: center;
     color: yellow;
@@ -146,46 +146,80 @@ a {
     opacity: 0;
 }
 
-.pblb a {
-    padding: 12px 48px;
-    text-align: center;
-    color: yellow;
-    border: solid 2px yellow;
-    z-index: 1;
-    opacity: 0;
-}
-
-.ptl:hover .bgtl {
+.p1:hover .bg1 {
     opacity: 0.1;
 }
 
-.ptl:hover .middle {
+.p1:hover .middle {
     opacity: 1;
 }
 
-.ptl:hover .ptlb {
+.p1:hover .p1b {
     opacity: 1;
 }
 
-.ptl:hover .ptlb a {
+.p1:hover .p1b a {
     opacity: 1;
 }
 
-.pbl:hover .bgbl {
+
+.p2:hover .bg2 {
     opacity: 0.1;
 }
 
-.pbl:hover .middle {
+.p2:hover .middle {
     opacity: 1;
 }
 
-.pbl:hover .pblb {
+.p2:hover .p2b {
     opacity: 1;
 }
 
-.pbl:hover .pblb a {
+.p2:hover .p2b a {
     opacity: 1;
 }
+
+
+.p3:hover .bg3 {
+    opacity: 0.1;
+}
+
+.p3:hover .middle {
+    opacity: 1;
+}
+
+.p3:hover .p3b {
+    opacity: 1;
+}
+
+.p3:hover .p3b a {
+    opacity: 1;
+}
+
+
+
+
+
+.p4:hover .bg4 {
+    opacity: 0.1;
+}
+
+.p4:hover .middle {
+    opacity: 1;
+}
+
+.p4:hover .p4b {
+    opacity: 1;
+}
+
+.p4:hover .p4b a {
+    opacity: 1;
+}
+
+
+
+
+
 
 
 .desc {
