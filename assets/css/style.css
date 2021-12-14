@@ -89,7 +89,7 @@ a {
     justify-content: space-around;
     height: 37vh;
     color: yellow;
-    margin: 5px;
+    /* margin: 5px; */
 }
 
 #prjBtmL, #prjBtmM, #prjBtmR {
@@ -100,16 +100,8 @@ a {
     /* margin-top: 15px; */
     height: 37vh;
     color: yellow;
-    margin: 5px;
+    /* margin: 5px; */
 }
-
-/* #prjTop1, #prjTop2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 53vh;
-    color: yellow;
-} */
 
 #p1Img, #p2Img, #p3Img, #p4Img {
     max-height: 100%;
@@ -162,7 +154,6 @@ a {
     opacity: 1;
 }
 
-
 .p2:hover .bg2 {
     opacity: 0.1;
 }
@@ -179,7 +170,6 @@ a {
     opacity: 1;
 }
 
-
 .p3:hover .bg3 {
     opacity: 0.1;
 }
@@ -195,10 +185,6 @@ a {
 .p3:hover .p3b a {
     opacity: 1;
 }
-
-
-
-
 
 .p4:hover .bg4 {
     opacity: 0.1;
@@ -225,17 +211,6 @@ a {
 .desc {
     color: red;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* TOGGLE CLASSES */
 .hidden {
