@@ -8,4 +8,4 @@ Updated projects page with recent homework and group project
 # Final Version
 https://esotericz.github.io/hw-week08/
 
-![Alt text](/assets/images/screenshot.png?raw=true "HW Week 06 Screenshot")
+![Alt text](/assets/images/screenshot.png?raw=true "HW Week 08 Screenshot")
