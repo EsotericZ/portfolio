@@ -58,9 +58,12 @@ function fadeOut() {
       $("#home").toggleClass("glow");
     })
   } else if (current === 2) {
-    $("#abtRow").fadeOut(fadeTime, function() {
+    $("#abtRow1").fadeOut(fadeTime, function() {
       $(this).toggleClass("hidden");
       $("#about").toggleClass("glow");
+    })
+    $("#abtRow2").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
     })
   } else if (current === 3) {
     $("#sklRow").fadeOut(fadeTime, function() {
@@ -92,8 +95,10 @@ function fadeIn() {
     $("#homeRow").hide().fadeIn(fadeTime);
     $("#home").toggleClass("glow");
   } else if (current === 2) {
-    $("#abtRow").toggleClass("hidden");
-    $("#abtRow").hide().fadeIn(fadeTime);
+    $("#abtRow1").toggleClass("hidden");
+    $("#abtRow1").hide().fadeIn(fadeTime);
+    $("#abtRow2").toggleClass("hidden");
+    $("#abtRow2").hide().fadeIn(fadeTime);
     $("#about").toggleClass("glow");
   } else if (current === 3) {
     $("#sklRow").toggleClass("hidden");
