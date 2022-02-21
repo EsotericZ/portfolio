@@ -27,15 +27,15 @@ $("#about").on('click', function() {
   }
 });
 
-$("#skills").on('click', function() {
-  if (current !== 3) {
-    fadeOut()
-    current = 3;
-    setTimeout(function() {
-      fadeIn()
-    }, fadeTime);
-  }
-});
+// $("#skills").on('click', function() {
+//   if (current !== 3) {
+//     fadeOut()
+//     current = 3;
+//     setTimeout(function() {
+//       fadeIn()
+//     }, fadeTime);
+//   }
+// });
 
 $("#projects").on('click', function() {
   if (current !== 4) {
@@ -65,11 +65,11 @@ function fadeOut() {
     $("#abtRow2").fadeOut(fadeTime, function() {
       $(this).toggleClass("hidden");
     })
-  } else if (current === 3) {
-    $("#sklRow").fadeOut(fadeTime, function() {
-      $(this).toggleClass("hidden");
-      $("#skills").toggleClass("glow");
-    })
+  // } else if (current === 3) {
+  //   $("#sklRow").fadeOut(fadeTime, function() {
+  //     $(this).toggleClass("hidden");
+  //     $("#skills").toggleClass("glow");
+  //   })
   }  else {
     $("#prjRow1").fadeOut(fadeTime, function() {
       $(this).toggleClass("hidden");
@@ -100,10 +100,10 @@ function fadeIn() {
     $("#abtRow2").toggleClass("hidden");
     $("#abtRow2").hide().fadeIn(fadeTime);
     $("#about").toggleClass("glow");
-  } else if (current === 3) {
-    $("#sklRow").toggleClass("hidden");
-    $("#sklRow").hide().fadeIn(fadeTime);
-    $("#skills").toggleClass("glow");
+  // } else if (current === 3) {
+  //   $("#sklRow").toggleClass("hidden");
+  //   $("#sklRow").hide().fadeIn(fadeTime);
+  //   $("#skills").toggleClass("glow");
   } else {
     $("#prjRow1").toggleClass("hidden");
     $("#prjRow1").hide().fadeIn(fadeTime);
