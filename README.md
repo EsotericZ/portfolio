@@ -1,11 +1,31 @@
-# hw-week08
-Homework Week 08 - Updated Portfolio Page
+# Porfolio
 
-# Description
-Updated online porfolio using HTML, CSS, BootStrap and jQuerry
-Updated projects page with recent homework and group project
+## Description 
+Online portfolio for CJ Sanders. Buit using HTML, CSS, Bootstrap and jQuerry with links to recent applications and projects
 
-# Final Version
-https://esotericz.github.io/hw-week08/
+## Table of Contents
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
+- [Questions](#Questions)
 
-![Alt text](/assets/images/screenshot.png?raw=true "HW Week 08 Screenshot")
+## Installation
+None
+      
+## Usage
+Online portfolio for showing projects and applications recently created using different technologies learned in class  
+  
+https://esotericz.github.io/portfolio/  
+
+![Alt text](/assets/images/screenshot.png?raw=true "Portfolio Screenshot")
+      
+## Contributing 
+n/a
+
+## Tests
+n/a
+
+## Questions
+GitHub Profile: [EsotericZ](https://www.github.com/EsotericZ)  
+Additional questions? [Contact Me](mailto:cjsand03@gmail.com)
