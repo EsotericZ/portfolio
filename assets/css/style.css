@@ -20,9 +20,13 @@ a {
     margin-right: 7px;
 }
 
-/* div {
+div {
     border: 1px solid white;
-} */
+}
+
+#page {
+    max-height: 80vh;
+}
 
 /* HOME */
 #homeRow {
@@ -265,7 +269,7 @@ a {
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
-  }
+}
   
 @-webkit-keyframes glow {
     from {
@@ -274,4 +278,74 @@ a {
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
-  }
+}
+
+/* SMALLER SCREENS */
+@media only screen and (max-width: 1250px) {
+    /* body {
+       background-color: lightblue;
+    } */
+    #prjRow3, #prjRow2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    } 
+    #prjTopL, #prjTopM, #prjTopR {
+        margin-top: 30px;
+    }
+    .bg1, .bg2, .bg3, .bg4, .bg5, .bg6 {
+        /* max-height: 50%; */
+        max-width: 800px;
+    }
+}
+
+/* TABLET SCREENS */
+@media only screen and (max-width: 800px) {
+    /* body {
+       background-color: pink;
+    } */
+    #prjRow3, #prjRow2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    } 
+    #prjTopL, #prjTopM, #prjTopR {
+        margin-top: 30px;
+    }
+    .bg1, .bg2, .bg3, .bg4, .bg5, .bg6 {
+        /* max-height: 50%; */
+        max-width: 500px;
+    }
+}
+
+/* PHONE SCREENS */
+@media only screen and (max-width: 400px) {
+    #homeRow {
+        margin-top: 30px;
+    }
+    #profPic {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    #profText {
+        text-align: center;
+    }
+    #prjTop {
+        margin-top: 150px;
+    }
+    #prjRow3, #prjRow2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 10px;
+    } 
+    #prjTopL, #prjTopM, #prjTopR {
+        margin-top: 30px;
+    }
+    .bg1, .bg2, .bg3, .bg4, .bg5, .bg6 {
+        max-width: 300px;
+    }
+}
