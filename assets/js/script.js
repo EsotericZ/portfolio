@@ -65,6 +65,12 @@ function fadeOut() {
     $("#abtRow2").fadeOut(fadeTime, function() {
       $(this).toggleClass("hidden");
     })
+    $("#abtRow3").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
+    })
+    $("#abtRow4").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
+    })
   // } else if (current === 3) {
   //   $("#sklRow").fadeOut(fadeTime, function() {
   //     $(this).toggleClass("hidden");
@@ -99,6 +105,10 @@ function fadeIn() {
     $("#abtRow1").hide().fadeIn(fadeTime);
     $("#abtRow2").toggleClass("hidden");
     $("#abtRow2").hide().fadeIn(fadeTime);
+    $("#abtRow3").toggleClass("hidden");
+    $("#abtRow3").hide().fadeIn(fadeTime);
+    $("#abtRow4").toggleClass("hidden");
+    $("#abtRow4").hide().fadeIn(fadeTime);
     $("#about").toggleClass("glow");
   // } else if (current === 3) {
   //   $("#sklRow").toggleClass("hidden");
