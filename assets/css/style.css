@@ -28,6 +28,10 @@ a {
     max-height: 80vh;
 }
 
+.contactMe {
+    text-align: center;
+}
+
 /* HOME */
 #homeRow {
     display: flex;
