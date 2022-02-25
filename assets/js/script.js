@@ -1,7 +1,6 @@
 // 1 - Home
 // 2 - About Me
-// 3 - Skills
-// 4 - Projects
+// 3 - Projects
 
 let current = 1;
 const fadeTime = 1000;
@@ -27,20 +26,10 @@ $("#about").on('click', function() {
   }
 });
 
-// $("#skills").on('click', function() {
-//   if (current !== 3) {
-//     fadeOut()
-//     current = 3;
-//     setTimeout(function() {
-//       fadeIn()
-//     }, fadeTime);
-//   }
-// });
-
 $("#projects").on('click', function() {
-  if (current !== 4) {
+  if (current !== 3) {
     fadeOut()
-    current = 4;
+    current = 3;
     setTimeout(function() {
       fadeIn()
     }, fadeTime);
@@ -71,11 +60,29 @@ function fadeOut() {
     $("#abtRow4").fadeOut(fadeTime, function() {
       $(this).toggleClass("hidden");
     })
-  // } else if (current === 3) {
-  //   $("#sklRow").fadeOut(fadeTime, function() {
-  //     $(this).toggleClass("hidden");
-  //     $("#skills").toggleClass("glow");
-  //   })
+
+    $("#abtTop").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
+    })
+    $("#abtLeft").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
+    })
+    $("#abtRight").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
+    })
+    $("#abtMidl").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
+    })
+    $("#resumeBtn").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
+    })
+    $("#skillsL").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
+    })
+    $("#skillsR").fadeOut(fadeTime, function() {
+      $(this).toggleClass("hidden");
+    })
+
   }  else {
     $("#prjRow1").fadeOut(fadeTime, function() {
       $(this).toggleClass("hidden");
@@ -109,11 +116,23 @@ function fadeIn() {
     $("#abtRow3").hide().fadeIn(fadeTime);
     $("#abtRow4").toggleClass("hidden");
     $("#abtRow4").hide().fadeIn(fadeTime);
+
+    $("#abtTop").toggleClass("hidden");
+    $("#abtTop").hide().fadeIn(fadeTime);
+    $("#abtLeft").toggleClass("hidden");
+    $("#abtLeft").hide().fadeIn(fadeTime);
+    $("#abtRight").toggleClass("hidden");
+    $("#abtRight").hide().fadeIn(fadeTime);
+    $("#abtMidl").toggleClass("hidden");
+    $("#abtMidl").hide().fadeIn(fadeTime);
+    $("#resumeBtn").toggleClass("hidden");
+    $("#resumeBtn").hide().fadeIn(fadeTime);
+    $("#skillsL").toggleClass("hidden");
+    $("#skillsL").hide().fadeIn(fadeTime);
+    $("#skillsR").toggleClass("hidden");
+    $("#skillsR").hide().fadeIn(fadeTime);
+
     $("#about").toggleClass("glow");
-  // } else if (current === 3) {
-  //   $("#sklRow").toggleClass("hidden");
-  //   $("#sklRow").hide().fadeIn(fadeTime);
-  //   $("#skills").toggleClass("glow");
   } else {
     $("#prjRow1").toggleClass("hidden");
     $("#prjRow1").hide().fadeIn(fadeTime);

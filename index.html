@@ -80,25 +80,25 @@
 
         <!-- ABOUT ME  -->
         <div class="row hidden" id="abtRow1">
-            <div class="col-12" id="abtTop">
+            <div class="col-12 hidden" id="abtTop">
                 <h1>ABOUT ME</h1>
             </div>
         </div>
         <div class="row hidden" id="abtRow2">
-            <div class="col-6" id="abtLeft">Story</div>
-            <div class="col-4" id="abtRight">Skills</div>
+            <div class="col-6 hidden" id="abtLeft">Story</div>
+            <div class="col-4 hidden" id="abtRight">Skills</div>
         </div>
 
         <div class="row hidden" id="abtRow3">
-            <!-- <div class="col-6" id="abtLeft">Story</div> -->
-            <div class="col-6 col-sm-10" style="white-space: pre-line" id="abtMid">Currently working as an Engineer for a manufacturing company producing and maintainig our internal company website. 
+            <div class="col-6 hidden" id="abtMidl">
+                Currently working as an Engineer for a manufacturing company producing and maintainig our internal company website. 
                 I have been working within Python for the last 3 years and have become proficient in SQL, Flask, Pandas, git and much more.
 
                 I enrolled at Denver University boot camp in October of 2021 to build upon my coding knowledge and make the switch into Full Stack Web Development.
                 
-                I look forward to helping you build your next website!               
+                I look forward to helping you build your next website!
             </div>
-            <div class="col-2" id="skillsL">
+            <div class="col-2 hidden" id="skillsL">
                 <ul>
                     <h5>mySQL</h5>
                     <h5>HTML/CSS</h5>
@@ -108,7 +108,7 @@
                     <h5>Bootstrap</h5>
                 </ul>
             </div>
-            <div class="col-2" id="skillsR">
+            <div class="col-2 hidden" id="skillsR">
                 <ul>
                     <h5>Python 3.x</h5>
                     <h5>Pandas</h5>
@@ -121,12 +121,12 @@
         </div>
         <div class="row hidden" id="abtRow4">
                 <!-- Modal Button -->
-            <button class="btn btn-dark btn-lg" data-toggle="modal" data-target="#myModal">
+            <button class="btn btn-dark btn-lg hidden" data-toggle="modal" data-target="#myModal" id="resumeBtn">
                 Resume
             </button>
             
                 <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -143,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <!-- PROJECTS -->
@@ -152,7 +152,7 @@
                 <h1>PROJECTS</h1>
             </div>
         </div>
-        <div class="row hidden" id="prjRow3">
+        <div class="row hidden" id="prjRow2">
             <div class="col-3 p1" id="prjTopL">
                 <img src="./assets/images/famyouly.png" alt="Project02" id="p1Img" class="bg1">
                 <div class="middle">
@@ -181,7 +181,7 @@
                 </div>
             </div>
         </div> 
-        <div class="row hidden" id="prjRow2">
+        <div class="row hidden" id="prjRow3">
             <div class="col-3 p4" id="prjBtmL">
                 <img src="./assets/images/note-taker.png" alt="note-taker" id="p4Img" class="bg4">
                 <div class="middle">
