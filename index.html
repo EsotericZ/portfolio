@@ -52,7 +52,7 @@
     </div>
 </nav>
 <div class="modal fade" id="myModal">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content"> 
             <div class="modal-header">
                 <h5 class="modal-title">Contact Me</h5> 
@@ -85,20 +85,19 @@
             </div>
         </div>
         <div class="row hidden" id="abtRow2">
-            <div class="col-6 hidden" id="abtLeft">Story</div>
-            <div class="col-4 hidden" id="abtRight">Skills</div>
+            <div class="col-sm-10 col-lg-6 hidden" id="abtLeft">Story</div>
+            <div class="col-lg-4 hidden" id="abtRight">Skills</div>
         </div>
 
-        <div class="row hidden" id="abtRow3">
-            <div class="col-6 hidden" id="abtMidl">
-                Currently working as an Engineer for a manufacturing company producing and maintainig our internal company website. 
+        <div class="row hidden mt-2" id="abtRow3">
+            <div class="col-sm-10 col-lg-6 hidden" style="white-space: pre-line" id="abtMidl">Currently working as an Engineer for a manufacturing company producing and maintainig our internal company website. 
                 I have been working within Python for the last 3 years and have become proficient in SQL, Flask, Pandas, git and much more.
 
                 I enrolled at Denver University boot camp in October of 2021 to build upon my coding knowledge and make the switch into Full Stack Web Development.
                 
                 I look forward to helping you build your next website!
             </div>
-            <div class="col-2 hidden" id="skillsL">
+            <div class="col-sm-10 col-lg-2 hidden" id="skillsL">
                 <ul>
                     <h5>mySQL</h5>
                     <h5>HTML/CSS</h5>
@@ -108,7 +107,7 @@
                     <h5>Bootstrap</h5>
                 </ul>
             </div>
-            <div class="col-2 hidden" id="skillsR">
+            <div class="col-sm-10 col-lg-2 hidden" id="skillsR">
                 <ul>
                     <h5>Python 3.x</h5>
                     <h5>Pandas</h5>
@@ -119,14 +118,14 @@
                 </ul>
             </div>
         </div>
-        <div class="row hidden" id="abtRow4">
+        <div class="row hidden mt-2" id="abtRow4">
                 <!-- Modal Button -->
-            <button class="btn btn-dark btn-lg hidden" data-toggle="modal" data-target="#myModal" id="resumeBtn">
+            <button class="btn btn-dark btn-lg hidden" data-toggle="modal" data-target="#resumeModal" id="resumeBtn">
                 Resume
             </button>
             
                 <!-- Modal -->
-            <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -143,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
 
         <!-- PROJECTS -->
@@ -186,7 +185,7 @@
                 <img src="./assets/images/note-taker.png" alt="note-taker" id="p4Img" class="bg4">
                 <div class="middle">
                     <h4 class="text">NOTE TAKER</h4>
-                    <h4 class="desc">NODE/EXPRESS</h4><br>
+                    <h4 class="desc">NODE/EXPRESS.JS</h4><br>
                     <button type="button" class="btn btn p4b"><a href="https://esotericz.github.io/note-taker/" target="_blank"> LIVE APP </a></button><br><br>
                     <button type="button" class="btn btn p4b"><a href="https://github.com/EsotericZ/note-taker" target="_blank"> GITHUB </a></button>
                 </div>

@@ -36,9 +36,6 @@ $("#projects").on('click', function() {
   }
 });
 
-
-
-
 // MAKE CURRENT SELECTION FADE OUT
 function fadeOut() {
   if (current === 1) {
@@ -60,7 +57,6 @@ function fadeOut() {
     $("#abtRow4").fadeOut(fadeTime, function() {
       $(this).toggleClass("hidden");
     })
-
     $("#abtTop").fadeOut(fadeTime, function() {
       $(this).toggleClass("hidden");
     })
@@ -82,7 +78,6 @@ function fadeOut() {
     $("#skillsR").fadeOut(fadeTime, function() {
       $(this).toggleClass("hidden");
     })
-
   }  else {
     $("#prjRow1").fadeOut(fadeTime, function() {
       $(this).toggleClass("hidden");
@@ -96,10 +91,6 @@ function fadeOut() {
     })
   }
 }
-
-
-
-
 
 // MAKE NEW SELECTION FADE IN
 function fadeIn() {
@@ -116,7 +107,6 @@ function fadeIn() {
     $("#abtRow3").hide().fadeIn(fadeTime);
     $("#abtRow4").toggleClass("hidden");
     $("#abtRow4").hide().fadeIn(fadeTime);
-
     $("#abtTop").toggleClass("hidden");
     $("#abtTop").hide().fadeIn(fadeTime);
     $("#abtLeft").toggleClass("hidden");
@@ -131,7 +121,6 @@ function fadeIn() {
     $("#skillsL").hide().fadeIn(fadeTime);
     $("#skillsR").toggleClass("hidden");
     $("#skillsR").hide().fadeIn(fadeTime);
-
     $("#about").toggleClass("glow");
   } else {
     $("#prjRow1").toggleClass("hidden");
@@ -143,14 +132,6 @@ function fadeIn() {
     $("#projects").toggleClass("glow");
   }
 }
-
-
-
-
-
-
-
-
 
 // BACKGROUND GOODNESS
 ; (function (name, factory) {

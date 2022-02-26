@@ -20,9 +20,9 @@ a {
     margin-right: 7px;
 }
 
-/* div {
-    border: 1px solid white;
-} */
+.modal-backdrop {
+    background-color: grey;
+}
 
 #page {
     max-height: 80vh;
@@ -36,12 +36,13 @@ a {
 #homeRow {
     display: flex;
     flex-direction: column;
-    height: 95vh;
+    height: 85vh;
     margin: 0;
     top: 50%;
     align-items: center;
     justify-content: center;
     color: var(--borange);
+    padding-top: 65px;
 }
 
 #homeRow h1 {
@@ -71,7 +72,7 @@ a {
     justify-content: center;
     color: var(--borange);
     font-size: 25px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 #abtLeft, #abtRight {
@@ -87,13 +88,14 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding-top: 60px; */
 }
 
 #abtMid {
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    height: 60vh;
+    /* height: 60vh; */
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -109,16 +111,6 @@ h6 {
     justify-content: center;
     align-items: center;
 }
-
-/* SKILLS */
-/* #sklLeft, #sklMid, #sklRight {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 60px;
-    height: 90vh;
-    color: hotpink;
-} */
 
 /* PROJECTS */
 #prjTop {
@@ -376,18 +368,21 @@ h6 {
         justify-content: flex-start;
         text-align: left;
     }
-    #abtRight {
-        display: none;
-    }
     #abtRow3 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: space-around; */
-        font-size: 10px;
     }
-    #abtMid {
-        padding: 0px;
-        margin: 0px;
+    #abtMidl {
+        padding: 15px;
+    }
+    #prjTop {
+        margin-top: 100px;
+    }
+    #abtTop {
+        margin-top: 120px;
+    }
+    #abtRight, #skillsL, #skillsR {
+        display: none;
     }
 }
