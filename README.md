@@ -11,7 +11,7 @@ Online portfolio for CJ Sanders. Buit using HTML, CSS, Bootstrap and jQuerry wit
 - [Questions](#Questions)
 
 ## Installation
-None
+Not meant for public use
       
 ## Usage
 Online portfolio for showing projects and applications recently created using different technologies learned in class  
